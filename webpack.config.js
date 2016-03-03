@@ -1,3 +1,6 @@
+var autoprefixer = require('autoprefixer')
+var precss       = require('precss')
+
 module.exports = {
     entry: "./src/entry.js",
     output: {
@@ -8,7 +11,10 @@ module.exports = {
     module: {
         loaders: [
            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
-           { test: /\.less$/, loader: "style!css!less" }
+           { test: /\.less$/, loader: "style!css!less!postcss-loader" }
         ]
+    },
+    postcss: function () {
+      return [autoprefixer, precss]
     }
 }
