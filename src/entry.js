@@ -1,1 +1,1 @@
-document.write("yes")
+require('./style.less')
