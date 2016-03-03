@@ -1,0 +1,20 @@
+{
+  "name": "kadist-addendum",
+  "version": "0.0.1",
+  "description": "Addedum site",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-core": "^6.6.4",
+    "babel-loader": "^6.2.4",
+    "webpack": "^1.12.14"
+  },
+  "devDependencies": {
+    "babel-core": "^6.6.4",
+    "babel-loader": "^6.2.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@owise1",
+  "license": "ISC"
+}
