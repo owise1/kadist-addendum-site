@@ -11,7 +11,8 @@ module.exports = {
     module: {
         loaders: [
            { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"},
-           { test: /\.less$/, loader: "style!css!less!postcss-loader" }
+           { test: /\.less$/, loader: "style!css!less!postcss-loader" },
+           { test: /\.html$/, loader: "raw-loader" }
         ]
     },
     postcss: function () {
