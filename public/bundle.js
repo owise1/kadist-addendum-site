@@ -44,19 +44,27 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
+	
 	__webpack_require__(1);
+	__webpack_require__(2);
 
 /***/ },
 /* 1 */
+/***/ function(module, exports) {
+
+	module.exports = "<!doctype html>\n<html class=\"no-js\" lang=\"\">\n    <head>\n        <meta charset=\"utf-8\">\n        <meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n        <title>Addendum</title>\n        <meta name=\"description\" content=\"\">\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n        <meta name=\"author\" content=\"@owise1\">\n        <meta property=\"og:type\" content=\"website\">\n        <meta property=\"og:url\" content=\"http://addednum.kadist.org\">\n        <meta property=\"og:sitename\" content=\"Addendum\">\n        <meta itemprop=\"name\" content=\"Addendum\">\n        <meta property=\"fb:admins\" content=\"612663871\">\n        <meta name=\"description\" content=\"Replace web ads with visual essays by artists.\">\n        <meta property=\"og:description\" content=\"Replace web ads with visual essays by artists.\">\n        <meta itemprop=\"description\" content=\"Replace web ads with visual essays by artists.\">\n        <meta property=\"og:title\" content=\"Addendum\">\n        <meta property=\"og:image\" content=\"\">\n        <meta itemprop=\"image\" content=\"\">\n\n        <link rel=\"apple-touch-icon\" href=\"apple-touch-icon.png\">\n        <!-- Place favicon.ico in the root directory -->\n        <script src=\"https://use.typekit.net/kax6snv.js\"></script>\n        <script>try{Typekit.load({ async: true });}catch(e){}</script>\n        <!--<link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>-->\n        <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>\n\n    </head>\n    <body>\n        <script type=\"text/javascript\" src=\"bundle.js\" charset=\"utf-8\"></script>\n        <header>\n          <h1 id=\"logo\">Addendum.</h1>\n          <h2>Replace web ads with visual essays by artists.</h2>\n          <h3><a href=\"\" class=\"link\">To get started click here to install add-art for <span class=\"browser\"></span></a></h3>\n        </header>\n    </body>\n</html>\n"
+
+/***/ },
+/* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// style-loader: Adds some css to the DOM by adding a <style> tag
 
 	// load the styles
-	var content = __webpack_require__(2);
+	var content = __webpack_require__(3);
 	if(typeof content === 'string') content = [[module.id, content, '']];
 	// add the styles to the DOM
-	var update = __webpack_require__(4)(content, {});
+	var update = __webpack_require__(6)(content, {});
 	if(content.locals) module.exports = content.locals;
 	// Hot Module Replacement
 	if(false) {
@@ -73,21 +81,21 @@
 	}
 
 /***/ },
-/* 2 */
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
-	exports = module.exports = __webpack_require__(3)();
+	exports = module.exports = __webpack_require__(4)();
 	// imports
 
 
 	// module
-	exports.push([module.id, "body {\n  background-color: #000;\n  display: -webkit-box;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n}\n", ""]);
+	exports.push([module.id, "body header {\n  width: 100%;\n  height: 100vh;\n  background: url(" + __webpack_require__(5) + ") center center no-repeat;\n  background-size: cover;\n}\n", ""]);
 
 	// exports
 
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports) {
 
 	/*
@@ -143,7 +151,13 @@
 
 
 /***/ },
-/* 4 */
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "c6f0e1aa377eccd6a3ffbd1c311a9225.jpg";
+
+/***/ },
+/* 6 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
