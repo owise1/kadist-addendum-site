@@ -1,4 +1,4 @@
-require('../public/index.html')
+if (__DEV__) require('../public/index.html')
 require('./style.less')
 
 navigator.sayswho= (function(){
