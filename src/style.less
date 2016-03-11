@@ -1,8 +1,12 @@
 @yellow: yellow;
+@red: #ed1c24;
 
 .sans{
   font-family:  "news-gothic-std", sans-serif;
   font-weight: 700;
+}
+.red{
+  color: @red;
 }
 
 * {
@@ -47,5 +51,40 @@ h3{
     text-decoration: none;
     text-transform: uppercase;
     font-size:  2em;
+  }
+}
+.container{
+  padding: 70px 100px;
+}
+section{
+  text-align: center; 
+  .essays{
+    background: url("images/essays.svg") top center no-repeat;
+    height: 80px;
+    width: 300px;
+    background-size: auto 100%;
+    display: inline-block;
+    margin-bottom: 40px;
+  }
+  h2{
+    width: 100%;
+    text-transform: uppercase;
+    color: #000;
+    font-size:  1.7em;
+    line-height:  1.3em;
+    margin-top: 0;
+    text-align: center; 
+  }
+  .images{
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    > div{
+      padding: 10px;
+      flex: 1;
+    }
+    img{
+      height: 200px;
+    }
   }
 }

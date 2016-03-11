@@ -1,8 +1,8 @@
 {
   "name": "kadist-addendum",
   "version": "0.0.1",
-  "description": "Addedum site",
-  "main": "webpack.config.js",
+  "description": "Addemdum site",
+  "main": "/src/entry.js",
   "dependencies": {
     "babel-core": "^6.6.4",
     "babel-loader": "^6.2.4",
