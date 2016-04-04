@@ -1,4 +1,3 @@
-if (__DEV__) require('../public/index.html')
 require('./style.less')
 
 navigator.sayswho= (function(){
@@ -21,17 +20,24 @@ const links = [
   {
     regex : /chrome/i,
     link : 'https://chrome.google.com/webstore/detail/addendum/jplogjalofjlkendelkacpekloflkfeg',
+    browser : 'chrome'
   },
   {
     regex : /firefox/i,
     link : 'https://addons.mozilla.org/en-US/firefox/addon/add-art/',
+    browser : 'firefox'
   },
   {
     regex : /safari/i,
-    link : 'https://chrome.google.com/webstore/detail/addendum/jplogjalofjlkendelkacpekloflkfeg',
+    link : 'http://addendum.kadist.org/add-art.safariextz',
+    browser : 'safari'
   }
 ]
-document.getElementById('link').setAttribute('href', links.reduce( (prev, curr) => {
-  if (prev) return prev
-  if (curr.regex.test(navigator.sayswho)) return curr.link
-}, false))
+const propForBrowser = (prop, links) => {
+  return links.reduce( (prev, curr) => {
+      if (prev) return prev
+      if (curr.regex.test(navigator.sayswho)) return curr[prop]
+  }, false)
+}
+document.getElementById('link').setAttribute('href', propForBrowser('link', links))
+document.getElementById('browser').textContent = propForBrowser('browser', links)

@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "webpack-dev-server --progress --colors",
-    "build": "BUILD_DEV=0 webpack --progress -p",
+    "build": "BUILD_DEV=false webpack --progress -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "@owise1",
